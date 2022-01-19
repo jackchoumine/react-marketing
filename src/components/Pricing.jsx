@@ -67,6 +67,7 @@ export function Pricing() {
           Home Page
         </Button>
         <hr />
+      
         <Button component={RouterLink} to='/dashboard' fullWidth variant='outlined' color='primary'>
           dashboard
         </Button>

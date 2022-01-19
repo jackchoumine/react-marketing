@@ -46,6 +46,15 @@ export function Landing() {
                   </Link>
                 </Grid>
               </Grid>
+              <p>
+                <a href='https://jackchoumine.github.io/react-container/'>集成后的页面</a>
+                <br />
+                <a href='https://jackchoumine.github.io/vue3-dashboard/'>vue3-dashboard 微应用</a>
+                <br />
+                <a href='https://jackchoumine.github.io/react-auth/'>react-auth 微应用</a>
+                <br />
+              </p>
+              <hr />
             </div>
           </Container>
         </div>
