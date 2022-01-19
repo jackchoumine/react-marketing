@@ -32,11 +32,11 @@ function mount(el, { onChildNavigate, defaultHistory, currentPathParent }) {
 
 // If we are in development and in isolation,
 // call mount immediately
-if (process.env.NODE_ENV === 'development') {
-  const el = document.getElementById('_marketing-dev-root')
-  const history = createBrowserHistory()
-  el && mount(el, { defaultHistory: history })
-}
+// if (process.env.NODE_ENV === 'development') {
+const el = document.getElementById('_marketing-dev-root')
+const history = createBrowserHistory()
+el && mount(el, { defaultHistory: history })
+// }
 
 // We are running through container
 // and we should export the mount function
