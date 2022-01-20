@@ -9,10 +9,12 @@ const generateClassName = createGenerateClassName({
 })
 
 export default ({ history }) => {
+  const isProd = process.env.NODE_ENV === 'production'
+  const baseUrl = isProd ? '/react-marketing' : '/'
   return (
     <div>
       <StylesProvider generateClassName={generateClassName}>
-        <Router history={history}>
+        <Router history={history} baseUrl={baseUrl}>
           <Switch>
             <Route exact path='/pricing' component={Pricing} />
             <Route path='/' component={Landing} />
